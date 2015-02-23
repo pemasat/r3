@@ -1,0 +1,48 @@
+.promo {
+    
+    h2 {
+        font-size: 3em; /*48px*/
+        margin: 0.5em 0 0.25em;
+    } 
+    .promo_img {
+        position: relative;
+        img {
+            vertical-align: middle;
+            max-height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            overflow: hidden;
+        } 
+    }
+
+    .promo_text .grid_columnIn  {
+        padding-right: 2em;
+        padding-bottom: 35px;
+    }
+
+}
+.promo_bg {
+    background-color: #f1f1f1;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    
+    .promo {
+        
+        .promo_text {
+            height: auto !important;
+        }
+        .promo_img {
+            height: 100% !important;
+            img {
+                position: static;
+                overflow: visible;
+            }
+        }
+        
+    }    
+}
+
