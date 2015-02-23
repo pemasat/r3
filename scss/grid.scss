@@ -1,8 +1,3 @@
-/*
-h2 { clear: both;}
-*/
-.grid_column { background-color: green; }
-.grid_column + .grid_column { background-color: blue; }
 
 
 /* phone */
@@ -13,15 +8,19 @@ h2 { clear: both;}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-	
-
 
 	.grid_row {
 		clear: both;
 		width: 100%;
+		&:after {
+			content: '';
+			clear: both;
+			display: block;
+		}
 		
 		.grid_rowIn {
-			
+			max-width: 960px;
+			margin: 0 auto;
 			
 			.grid_column {
 				float: left;
@@ -31,19 +30,21 @@ h2 { clear: both;}
 				}
 			}
 		}
+		
+		&.grid_row_wide .grid_rowIn {
+			max-width: 100%;
+		}
 
 	}
 
 
 	.grid_12_0 {
-		.grid_column {
-			width: 100%;
-		}
+		.grid_column { width: 100%; }
 	}
 
 	.grid_9_3 {
-		.grid_column { width: 66%; }
-		.grid_column + .grid_column { width: 33%; }
+		.grid_column { width: 66.667%; }
+		.grid_column + .grid_column { width: 33.330%; }
 	}
 	
 	.grid_6_6 {
@@ -51,8 +52,8 @@ h2 { clear: both;}
 	}
 	
 	.grid_3_9 {
-		.grid_column { width: 33%; }
-		.grid_column + .grid_column { width: 66%; }
+		.grid_column { width: 33.330%; }
+		.grid_column + .grid_column { width: 66.667%; }
 	}
 	
 }
@@ -62,7 +63,11 @@ h2 { clear: both;}
 
 /* Medium devices (desktops, 960px and up) */ 
 @media (min-width: 960px) { 
-
+	.grid_row {
+		&.grid_row_wide .grid_rowIn {
+			max-width: 1980px;
+		}
+	}
 
 }
 

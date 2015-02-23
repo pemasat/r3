@@ -10,9 +10,26 @@ and open the template in the editor.
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" media="screen" href="../css/grid.css" />
+		<style type="text/css">
+			h2 { clear: both;}
+			.grid_row { background-color: grey; }
+			.grid_column { background-color: green; }
+			.grid_column + .grid_column { background-color: blue; }
+		</style>
 	</head>
 	<body>
-		<h2>Jeden sloupec</h2>
+		<h2>Jeden sloupec - na 100%</h2>
+		<div class="grid_12_0 grid_row grid_row_wide">
+			<div class="grid_rowIn">
+				<div class="grid_column">
+					<div class="grid_columnIn">
+						Test
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h2>Jeden sloupec standart</h2>
 		<div class="grid_12_0 grid_row">
 			<div class="grid_rowIn">
 				<div class="grid_column">
@@ -22,7 +39,7 @@ and open the template in the editor.
 				</div>
 			</div>
 		</div>
-		
+
 		<h2>Tři ku devíti</h2>
 		<div class="grid_3_9 grid_row">
 			<div class="grid_rowIn">
