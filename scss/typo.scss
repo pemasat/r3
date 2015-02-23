@@ -49,9 +49,17 @@ h1, h2, h4, h5, h6 {
     color: #000000;
 }
 a {
+    color: $violet;
+}
+.menu a {
+    color: $basic;    
+}
+.service-menu a {
+    color: $basic;
+}
+.service-menu a:hover { 
     color: #000000;
 }
-
 #footer * {
     color: $basic;
 }
