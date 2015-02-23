@@ -15,6 +15,7 @@ and open the template in the editor.
 			.grid_row { background-color: grey; }
 			.grid_column { background-color: green; }
 			.grid_column + .grid_column { background-color: blue; }
+			.grid_column + .grid_column + .grid_column { background-color: yellow; }
 		</style>
 	</head>
 	<body>
@@ -40,13 +41,13 @@ and open the template in the editor.
 			</div>
 		</div>
 
-		<h2>Tři ku devíti</h2>
-		<div class="grid_3_9 grid_row">
+
+		<h2>Čtyři ku osmi</h2>
+		<div class="grid_4_8 grid_row">
 			<div class="grid_rowIn">
 				<div class="grid_column">
 					<div class="grid_columnIn">
-						Test
-						33%
+						Test 33%
 					</div>
 				</div>
 				<div class="grid_column">
@@ -56,14 +57,13 @@ and open the template in the editor.
 				</div>
 			</div>
 		</div>
-		
-		<h2>Půl na půl</h2>
+			
+		<h2>Pade na pade </h2>
 		<div class="grid_6_6 grid_row">
 			<div class="grid_rowIn">
 				<div class="grid_column">
 					<div class="grid_columnIn">
-						Test
-						50%
+						Test 50%
 					</div>
 				</div>
 				<div class="grid_column">
@@ -74,8 +74,8 @@ and open the template in the editor.
 			</div>
 		</div>
 		
-		<h2>devět ku třem</h2>
-		<div class="grid_9_3 grid_row">
+		<h2>Osm ku čtyřem</h2>
+		<div class="grid_8_4 grid_row">
 			<div class="grid_rowIn">
 				<div class="grid_column">
 					<div class="grid_columnIn">
@@ -90,6 +90,28 @@ and open the template in the editor.
 				</div>
 			</div>
 		</div>
+
+		<h2>Tři čtyřky</h2>
+		<div class="grid_4_4_4 grid_row">
+			<div class="grid_rowIn">
+				<div class="grid_column">
+					<div class="grid_columnIn">
+						Test 33%
+					</div>
+				</div>
+				<div class="grid_column">
+					<div class="grid_columnIn">
+						33%
+					</div>
+				</div>
+				<div class="grid_column">
+					<div class="grid_columnIn">
+						33%
+					</div>
+				</div>
+			</div>
+		</div>
+		
 		
 	</body>
 </html>

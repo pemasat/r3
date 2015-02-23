@@ -38,7 +38,7 @@
 		.grid_column { width: 100%; }
 	}
 
-	.grid_9_3 {
+	.grid_8_4 {
 		.grid_column { width: 66.667%; }
 		.grid_column + .grid_column { width: 33.330%; }
 	}
@@ -47,11 +47,15 @@
 		.grid_column { width: 50%; }
 	}
 	
-	.grid_3_9 {
+	.grid_4_8 {
 		.grid_column { width: 33.330%; }
 		.grid_column + .grid_column { width: 66.667%; }
 	}
 	
+	.grid_4_4_4 {
+		.grid_column { width: 33.330%; }
+	}
+
 }
 
 
