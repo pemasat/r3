@@ -1,7 +1,7 @@
 body {
     font-size: 100%;
     font-family: 'Source Sans Pro', sans-serif;
-    color: #666666;
+    color: $basic;
 }
 button, button *, textarea {font-family: "Arial CE", Arial, "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;} /* Fix IE bug */
 
@@ -43,7 +43,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td
 button, input {
-    color: #666666;
+    color: $basic;
 }
 h1, h2, h4, h5, h6 {
     color: #000000;
@@ -53,9 +53,9 @@ a {
 }
 
 #footer * {
-    color: #666666;
+    color: $basic;
 }
 .colored {
-    color: #5f259f;
+    color: $violet;
 }
 
