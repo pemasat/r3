@@ -29,7 +29,7 @@
     .social_icons {
         a {
             position: relative;
-            width: 30px;
+            width: 25px;
             height: 30px;
             display: block;
             float: left;
@@ -40,7 +40,7 @@
                 position: absolute;
                 left: 0;
                 top: 0;
-                width: 30px;
+                width: 25px;
                 height: 30px;
                 background: url("#{$imagesFolder}sprite-social-icons.png") no-repeat left top;
             }
@@ -50,32 +50,32 @@
             background-position: 0px 0;
         }
         .ico-rss span {
-            background-position: -40px 0;
+            background-position: -35px 0;
         }
         .ico-skype span {
-            background-position: -84px 0;
+            background-position: -82px 0;
         }
         .ico-twitter span {
             background-position: -131px 0;
         }
         .ico-linkedin span {
-            background-position: -174px 0;
+            background-position: -177px 0;
         }
         
         .ico-face:hover span {
-            background-position: 0px -57px;
+            background-position: 0px -30px;
         }
         .ico-rss:hover span {
-            background-position: -40px -57px;
+            background-position: -35px -30px;
         }
         .ico-skype:hover span {
-            background-position: -84px -57px;
+            background-position: -82px -30px;
         }
         .ico-twitter:hover span {
-            background-position: -131px -57px;
+            background-position: -131px -30px;
         }
         .ico-linkedin:hover span {
-            background-position: -174px -57px;
+            background-position: -177px -30px;
         }
     }
     
