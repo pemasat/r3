@@ -1,7 +1,13 @@
+// základní styly
 @import "normalize.scss";
 @import "variable.scss";
 @import "mixins.scss";
 @import "typo.scss";
+
+// rozložení
 @import "grid.scss";
+
+// elementy
 @import "header.scss";
 @import "promo.scss";
+@import "product.scss";

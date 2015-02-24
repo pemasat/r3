@@ -1,10 +1,70 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 23.2.2015, 14:35:56
-    Author     : mawebis
-*/
 
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+	#productSwitcher {
+		text-align: center;
+		.grid_rowIn {
+			max-width: 960px !important;
+		}
+		
+		a {
+			display: inline-block;
+			background-color: green;
+			width: 320px;
+			min-height: 255px;
+			background: transparent url('../images/lidi.png') left top no-repeat;
+			position: relative;
+			margin: 0 auto;
+			text-indent: -999999px;
+			overflow: hidden;
+			
+			&#firmy_link { background-position: -320px top; }
+			&#studenti_link { background-position: -640px top; }
+			
+			&#private_link:hover { background-position: 0 -255px; }
+			&#firmy_link:hover { background-position: -320px -255px; }
+			&#studenti_link:hover { background-position: -640px -255px; }
+			 
+			&:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				right: -139px;
+				width: 200px;
+				height: 100px;
+				background: transparent url('../images/lidi.png') left top no-repeat;
+				z-index: 999;
+			}
+			
+			&.selected {
+				overflow: visible;
+			}
+			&#private_link.selected { 
+				background-position: 0 -510px; 
+				&:after {
+					right: 0;
+					background-position: -120px -811px;
+				}
+			}
+			&#firmy_link.selected { 
+				background-position: -320px -510px; 
+				&:after {
+					right: -52px;
+					background-position: -520px -797px;
+				}
+			}
+			&#studenti_link.selected { 
+				background-position: -640px -510px; 
+				&:after {
+					right: 150px;
+					background-position: -640px -1055px;
+				}
+			}
+			
+			
+		}
+		
+
+	}
+}
