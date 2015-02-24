@@ -8,6 +8,8 @@
 	#productSwitcher {
 		margin-bottom: $rowBottomMargin;
 		
+		background: transparent url('../images/lidi.png') left bottom repeat-x;
+		
 		text-align: center;
 		.grid_rowIn {
 			max-width: 960px !important;
@@ -21,7 +23,6 @@
 			background: transparent url('../images/lidi.png') left top no-repeat;
 			position: relative;
 			margin: 0 auto;
-			text-indent: -999999px;
 			overflow: hidden;
 			
 			&#firmy_link { background-position: -320px top; }
@@ -69,6 +70,20 @@
 				}
 			}
 			
+			span {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 51px;
+				background: transparent url('../images/lidi.png') left -1474px repeat-x;
+				font-size: 120%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				
+			}
+			&.selected span { display: none; }
 			
 		}
 
