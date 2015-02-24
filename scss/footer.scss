@@ -1,0 +1,100 @@
+#footer {
+    .grid_row {
+        background-color: #f1f1f1;
+    }
+    .grid_4_8 .grid_rowIn {
+        padding: 25px 0 15px 0;      
+    }
+    .grid_4_4_4 .grid_rowIn {
+        padding: 40px 0;
+    }
+    .grid_12_0 {
+        text-align: center;
+        padding: 25px 0;
+    }    
+    .grid_rowIn:after {
+        clear: both;
+        content: "";
+        display: block;
+    }   
+    .grid_4_8 .grid_rowIn,
+    .grid_4_4_4 .grid_rowIn {
+        border-bottom: 1px solid #d7d7d7;
+    }
+    ul {
+        margin: 0;
+        padding-left: 15px;
+    }
+    
+    .social_icons {
+        a {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            display: block;
+            float: left;
+            margin-right: 20px;
+            
+            span {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 30px;
+                height: 30px;
+                background: url("#{$imagesFolder}sprite-social-icons.png") no-repeat left top;
+            }
+        }
+        
+        .ico-face span {
+            background-position: 0px 0;
+        }
+        .ico-rss span {
+            background-position: -40px 0;
+        }
+        .ico-skype span {
+            background-position: -84px 0;
+        }
+        .ico-twitter span {
+            background-position: -131px 0;
+        }
+        .ico-linkedin span {
+            background-position: -174px 0;
+        }
+        
+        .ico-face:hover span {
+            background-position: 0px -57px;
+        }
+        .ico-rss:hover span {
+            background-position: -40px -57px;
+        }
+        .ico-skype:hover span {
+            background-position: -84px -57px;
+        }
+        .ico-twitter:hover span {
+            background-position: -131px -57px;
+        }
+        .ico-linkedin:hover span {
+            background-position: -174px -57px;
+        }
+    }
+    
+    .loga {
+        
+        img {
+            margin: 0px 10px 0 10px;
+        }
+        .loga_clain {
+            position: relative;
+            top: -7px; 
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    
+    #footer .loga {
+        clear: both;
+        padding-top: 15px;
+    }  
+}
