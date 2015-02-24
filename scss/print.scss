@@ -1,0 +1,109 @@
+/* ------- DEFAULT DECLARATON ------- */
+html, body, div, span, applet, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td
+button, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    color: inherit;
+    vertical-align: baseline;
+    line-height:1.45em;
+}
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+body {
+    line-height: 1;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+/* TYPOGRAPHY - text properties section, please do not use any of them elsewhere */
+body {
+    font-size: 62.5%; /*default size cca 10px, 62.5 is onec of magic number */
+    font-family: Arial, Verdana, "Geneva CE", lucida, sans-serif;
+}
+button, button * {font-family: Arial, sans-serif;} /* Fix IE bug */
+/* font-size */
+.grid_row {font-size: 1.1em;}  /*normal size for text cca 11px */
+h1, #header {font-size: 218.2%;} /* cca 24px */
+form fieldset legend,
+h2 {font-size: 163.63%} /* cca 18px */
+h3 {font-size: 127.27%;} /* cca 14px */
+h4, #menu {font-size: 109.09%;} /* cca 12px */
+h5, h6,
+button, input, select {font-size: 100%;}
+/* text-decoration: none/underline */
+a {text-decoration: underline;}
+/* font-weight: bold/normal */
+h1, h2, h3,
+b, strong,
+dl dt,
+table caption, table tr th,
+form fieldset legend, form fieldset label, form button,
+a.button {font-weight: bold;}
+h4, h5, h6 {font-weight: normal;}
+
+/* font-style: normal/italic */
+em {font-style: italic;}
+
+img.left {
+    float: left;
+    margin: 0 20px 10px 0;
+}
+img.right {
+    float: right;
+    margin: 0 0 10px 20px;
+}
+form input,
+form textarea,
+form button {
+    border: 1px solid black;
+}
+form button {
+    background-color: white;
+}
+table {
+    border-collapse: collapse;
+}
+
+table, table td, table th { 
+    border: 0;
+}
+#header {
+    margin-bottom: 1em;
+}
+.menu,
+.service-menu,
+#footer {
+    display: none;
+}
+.promo_text, .promo_img {
+    height: auto !important;
+}
+
+
