@@ -1,14 +1,14 @@
 .button {
-    top: 30xp;
-    margin: 10px 10px 10px 0; 
+    margin: 10px 30px 10px 0; 
     padding: 10px 25px 10px 25px;
     background: none;
     border: 1px;
     border-style: solid;
     text-align: center;
-    width: 100%; 
+    width: 120px; 
     text-decoration: none;
     color: $basic;
+    display: block;
  } 
 a.button:hover {    
         text-decoration: none;
@@ -21,7 +21,7 @@ input, button {
     border: 1px;
     border-style: solid;
     text-align: center;
-    max-width: 200px;  
+    width: 173px;  
 }
 input:hover {
     text-decoration: none;
