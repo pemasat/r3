@@ -1,10 +1,13 @@
 // @import "mixins.scss";
+// @import "variable.scss";
 
 $slider_height: 460px;
 
 #slider {
+	clear: both;
 	position: relative;
 	min-height: $slider_height;
+	margin-bottom: $rowBottomMargin;
 	
 	.grid_row {
 		// background-size: cover;
@@ -27,11 +30,12 @@ $slider_height: 460px;
 	}
 	
 	.infoBox {
-		padding: 60px 0 0 90px;
-		width: 440px;
+		padding: 10px 0 0 90px;
+		width: 540px;
+		font-size: 130%;
 		
 		h2 {
-			font-size: 2.4em;
+			font-size: 3em;
 		}
 		p {
 			color: black;
