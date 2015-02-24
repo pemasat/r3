@@ -1,7 +1,8 @@
+
 .button {
     top: 30xp;
     margin: 10px 10px 10px 0; 
-    padding: 10px 25px 10px 25px;
+    padding: 10px 25px;
     background: none;
     border: 1px;
     border-style: solid;
@@ -9,6 +10,7 @@
     width: 100%; 
     text-decoration: none;
     color: $basic;
+	 display: inline-block;
  } 
 a.button:hover {    
         text-decoration: none;
