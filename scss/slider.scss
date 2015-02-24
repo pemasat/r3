@@ -1,12 +1,80 @@
+// @import "mixins.scss";
 
-.cycle-slideshow{
- margin: 0 auto; 
- width: 960px; 
- height: 458px; 
- overflow: hidden;   
+$slider_height: 460px;
+
+#slider {
+	position: relative;
+	min-height: $slider_height;
+	
+	.grid_row {
+		// background-size: cover;
+		background-position: bottom center;
+		
+		.grid_rowIn {
+			max-width: 960px;
+			margin: 0 auto;
+			
+			
+			.grid_column {
+
+				.grid_columnIn {
+					min-height: $slider_height;
+				}
+			}
+			
+		}
+		
+	}
+	
+	.infoBox {
+		padding: 60px 0 0 90px;
+		width: 440px;
+		
+		h2 {
+			font-size: 2.4em;
+		}
+		p {
+			color: black;
+		}
+		
+	}
+	
+	.button {
+		border-color: #dac6cf;
+		color: #f3f0f3;
+		width: auto;
+		
+	}
+	
+	.cycle-pager {
+		position: absolute;
+		bottom: 15px;
+		z-index: 999;
+		text-align: center;
+		width: 100%;
+		
+		
+		span {
+			border: 2px solid white;
+			@include border-radius(10px);
+			text-indent: -999999px;
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			margin: 0 8px;
+			cursor: pointer;
+			&:hover {
+				background-color: grey;
+			}
+			
+			&.cycle-pager-active {
+				background-color: white;
+			}
+			
+		}
+	}
+	
 }
-.slide {
- width: 960px; 
- height: auto;   
-}
+
+
 
