@@ -17,10 +17,10 @@ $(window).load(function() {
 
 	//  do onloadu kvuli chrome
   setMinHeight('.promo .grid_column');
-
-
-
   
+
+
+
 });
 
 $(window).resize(function() {
